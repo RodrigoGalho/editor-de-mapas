@@ -8,7 +8,7 @@
 		function cenario($scope){
 			$scope.selecao = "1";
 
-			$scope.blocos = ["1","2","3","4","5","6","7","8","9","10"];
+			$scope.blocos = ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22"];
 
 			$scope.mapa = [
 				"1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1",
@@ -59,19 +59,19 @@
 	}
 
 	.opcoes{
-		width: 30px;
+		width: 60px;
 		height: 600px;
 		position: absolute;
-		right: -60px;
+		right: -90px;
 	}
 	</style>
 </head>
 <body ng-app>
 	<div id="base" ng-controller="cenario">
-		<div class="cena" ng-repeat="cena in mapa" ng-click="selecionar($index)"><img src="{{cena}}.png" alt="" /></div>
+		<div class="cena" ng-repeat="cena in mapa" ng-click="selecionar($index)"><img src="img/{{cena}}.png" alt="" /></div>
 		<div class="opcoes">
-			<div class="cena"  style="margin-bottom:30px;"><img src="{{selecao}}.png"></div>
-			<div ng-repeat="bloco in blocos" class="cena" ng-click="mudarSelecao($index)"><img src="{{bloco}}.png" alt="" /></div>
+			<div class="cena"  style="margin-bottom:30px; margin-right:30px;"><img src="img/{{selecao}}.png"></div>
+			<div ng-repeat="bloco in blocos" class="cena" ng-click="mudarSelecao($index)"><img src="img/{{bloco}}.png" alt="" /></div>
 		</div>
 	</div>
 </body>
