@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Cenário</title>
-	<script src="http://www.jpanda.com.br/coder/dev/js/angular.min.js"></script>
+	<script src="dev/js/angular.min.js"></script>
 	<script>
 		function cenario($scope){
 			$scope.selecao = "1";
@@ -68,10 +68,10 @@
 </head>
 <body ng-app>
 	<div id="base" ng-controller="cenario">
-		<div class="cena" ng-repeat="cena in mapa" ng-click="selecionar($index)"><img src="img/{{cena}}.png" alt="" /></div>
+		<div class="cena" ng-repeat="cena in mapa" ng-click="selecionar($index)"><img src="dev/img/{{cena}}.png" alt="" /></div>
 		<div class="opcoes">
-			<div class="cena"  style="margin-bottom:30px; margin-right:30px;"><img src="img/{{selecao}}.png"></div>
-			<div ng-repeat="bloco in blocos" class="cena" ng-click="mudarSelecao($index)"><img src="img/{{bloco}}.png" alt="" /></div>
+			<div class="cena"  style="margin-bottom:30px; margin-right:30px;"><img src="dev/img/{{selecao}}.png"></div>
+			<div ng-repeat="bloco in blocos" class="cena" ng-click="mudarSelecao($index)"><img src="dev/img/{{bloco}}.png" alt="" /></div>
 		</div>
 	</div>
 </body>
